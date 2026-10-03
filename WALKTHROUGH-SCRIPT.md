@@ -1,6 +1,6 @@
 # Margin walkthrough script
 
-**Target length:** about 3–4 minutes. Replace “live link” with the deployed URL before recording. Keep the app open in one browser and a second browser profile ready for Maya.
+**Target length:** about 3–4 minutes. Keep the app open in one browser and a second browser profile ready for Maya.
 
 ## Script
 
@@ -20,7 +20,7 @@ I kept the scope deliberate: this is a demo with seeded accounts, not a producti
 
 I used Codex as a coding partner to speed up implementation and investigate integration issues. I kept the product decisions and reviewed the generated changes, especially around role enforcement, persistence, and the export flow. I verified the main paths with automated tests, a production build, and a two-account collaboration check. The README includes local setup and demo account details.
 
-You can try the app at **[live product URL]**. Thanks for taking a look.
+You can try the app at **https://ai-native-full-stack-developer-assi-ten.vercel.app**. Thanks for taking a look.
 
 ## Recording checklist
 
@@ -28,4 +28,4 @@ You can try the app at **[live product URL]**. Thanks for taking a look.
 - Create a document, format it, and show the saved state.
 - Share with Maya; open the document in a second browser profile and show edits, presence, and cursor movement.
 - Demonstrate commenter review, suggestion acceptance, version restore, and PDF download.
-- Replace the live URL placeholder and confirm all described flows still work before recording.
+- Confirm all described flows still work before recording.

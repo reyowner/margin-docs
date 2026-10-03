@@ -21,7 +21,7 @@ export function CollaborativeEditor({ document, user, token, role, canComment, o
   useEffect(() => {
     const defaultCollabUrl = window.location.hostname === 'localhost'
       ? 'ws://localhost:1234'
-      : `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}`;
+      : `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/api`;
     const instance = new HocuspocusProvider({ url: import.meta.env.VITE_COLLAB_URL || defaultCollabUrl, name: document.id, token, onSynced: ({ state }) => onConnection(state ? 'connected' : 'connecting'), onStatus: ({ status }) => onConnection(status) });
     const updatePresence = () => onPresence([...instance.awareness.getStates().values()].map((state) => state.user).filter(Boolean));
     instance.on('awarenessUpdate', updatePresence);
