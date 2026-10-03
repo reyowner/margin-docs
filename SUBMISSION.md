@@ -7,14 +7,13 @@
 3. `ARCHITECTURE.md` - product slice, system design, tradeoffs, and next steps.
 4. `AI-WORKFLOW.md` - AI tools, contributions, rejected output, and verification.
 5. `test/app.test.js` and `test/supabase-store.test.js` - authentication, sharing, workspace, persistence, realtime, review-action, PDF generation, and hosted-store concurrency tests.
-6. `WALKTHROUGH-SCRIPT.md` - the short script used to guide the walkthrough recording.
-7. `walkthrough-url.txt` - notes that the video was submitted with the Drive package; its URL was not copied into this local project.
+6. `walkthrough-url.txt` - notes that the video was submitted with the Drive package; its URL was not copied into this local project.
 
 The submission source package should exclude `data/store.json` (private local drafts), `.env` files, `node_modules/`, generated `dist/`, and the ignored `work/` scratch scripts. Keep the local data file in place on this computer; it is created automatically on a fresh install. The setup is simple enough that no extra screenshots or demo GIF are required; none are currently included.
 
 ## Current delivery status
 
-- **Source repository:** https://github.com/reyowner/margin-docs (private GitHub repository).
+- **Source repository:** https://github.com/reyowner/margin-docs (public GitHub repository).
 - **Local product:** available at `http://localhost:5173` while the dev server is running; run with `npm install` then `npm run dev`.
 - **Supabase:** free project `margin-docs` in `ap-southeast-1`, with the state table, RLS, and backend-key check configured. Hosted database sign-in, sharing, and the storage authorization boundary were exercised from a local server.
 - **Live deployment URL:** https://ai-native-full-stack-developer-assi-ten.vercel.app. Public login and shared access were verified. Demo credentials are in `README.md`.
