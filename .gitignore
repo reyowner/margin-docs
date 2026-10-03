@@ -4,3 +4,6 @@ data/
 work/
 .env
 .vercel/
+
+.vercel
+.env*
